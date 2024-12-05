@@ -1,6 +1,5 @@
 {
-    "title": "Introduce your product quickly & effectively",
-    "text": "Landy comes with multi-lingual support, all of the content is stored in the JSON files, so that you can manage the texts without having any prior knowledge in developing web applications using React.js.",
-    "button": "Get started"
-  }
-  
+  "title": "A Microlab for Future Scientists",
+  "text": "Brought to you by the Shakoor Lab at the Donald Danforth Plant Science Center, this hands-on lab connects students with cutting-edge research in agriculture and geospatial science.",
+  "button": "Get started"
+}

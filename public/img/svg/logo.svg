@@ -1,3 +1,14 @@
-<svg viewBox="0 0 130 40" xmlns="http://www.w3.org/2000/svg">
-  <text y="30" font-family="Motiva Sans Bold, sans-serif" fill="#18216d" font-size="43px" font-weight="700">Landy</text>
+<svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg" width="300" height="75">
+  <!-- Add the icon using the <image> element -->
+ 
+  <!-- Add the text -->
+  <text x="75" y="60" font-family="Motiva Sans Bold, sans-serif" fill="#e0e0e0" font-size="54px" font-weight="400">AgriLabs</text>
+   <image 
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEVUlEQVR4nO1ZXWgcVRRe6oPFFyv2zTfxxQcpnZsipZZY1EIpCoJFER9qkaI+WH0IRUFUUChtX6Kg3rvGjfZHGxohtsVoLGLRYEqJrdWEaAOlTZvWprl3fvZnsjN75MxmsncnM7t31t1kW+aDA5PJzL3nO/ecb+eem0olSJAgQRDrPtLv1RjvIpT/g4bXeC/V7tDSghAqKGEiS5iAauMFwkQfSRsbUu2Ezgys1BjfrjF+2nd2XVrAa99Z8Mulomd4jff8/+Oz+E5nBlYum+NrPpm5j1D+LmH8hu9YZ68O+4ZzMGW4EMR1ywV6Jg+PfanLKyMI490dPeL+pfH6HVjRQcXjmAoa5Y7vyAvfmNA/bkO+WIJ6sB2Aock5eOWEJaeXqzExRKjYtq0P7mi634TO3q2lxU5C+Zg/6foeAbt/zMLZaw40irEbDnxwKgcbPq+sikbFJGFiN6HG6pYU5ZZDhpcKPF8/2qow7RIcPl+Ap74ymlP0az+dfTKqKN0YfhfdsqnCLUFo0RPGLxDG31OPPOMuvvhIRof9EUVZCzPZEvSeLcDWwwZsPqjDhyN5mDbjjTHJHa9OJCIlZQKyfj/aq0P3SB6uWa5STr/9UxYe/iz4G1BexdcHLRiZKkKtRTTsEvSMFuCJA1Vq5Vk8AlRUKYXvwLlA0WbnSp4CPXfUXDRhlD19xPBWSC9UqNzMlbzawoD5zz3fb8Lxv+0GCTDhDfzXvw68dbI6qi99a8Hv00XY+2sONmYWR0rVNmZ0OPhHAb7+0/ZUzb//6gkLTl8pLpD7XwR8YAphKmGEdh6zvHtYG5jfctRU7dmj5eg685n58nELuoayXsCCaAoBOWUGL9hwWa/UhDUvg1i09RzfMWDCzxfnFupgzgUYmLBh9Gol4i0lgBi+XKwqSlkG0bkXB8xIx+Vf5P5xe4E0jrmkBGTn/GKTNX90ughdP2ThzZNZmJhxFq0WyiuRxlhWAr6hU6gksrrUUhnSbgRkdUGF8vH+qVyVyrQ9ARJ4X+XZ4YSAhGQFWJJCVUiK+LZTofPXnbq6HofA+h7hjblkBKL3sfEIbFHcX7eEgPwBhx902KGo3seGE8BncKOErRVXcX/dUgK1mleyA7WaXi0jIH/zxwF+Kh+bsL3NCRpe471GcEl3Gyew6Qsdun/LNxQ1RKMricA5cW70ITYBjQozmLe7BuP3heIScOf7QjhXsJ40JowYK8APRSkHqg52FFQ6c6oETLvc2Ximr6JoHcG5KT+gTOChj8U9hPHv62l3vd5oPQJjIb3RUKN8cE2Gr1ImoHZgUbGo7nQYgbDudEfouOXeKHbDU03pTtPZXfOd40giQamUCUScD0CITXnnDs3oTqueDwTNL3r/77CiDETbben5QBjwVEWjYo98QlPLwtNECEzRtWnjwdRy4YFuuBMj50VQgUi5KMWZ8oHJlbtS7YRb8pQyDHgmTCh/Q2NiAA2vb4lz4gSp+PgPghW+z2bZ/ToAAAAASUVORK5CYII=" 
+    x="0" 
+    y="11" 
+    width="80" 
+    height="58" 
+    alt="module"
+  />
 </svg>

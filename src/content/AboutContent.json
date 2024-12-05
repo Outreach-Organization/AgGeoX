@@ -1,16 +1,16 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Soil, Sensors, and Sorghum",
+  "text": "Students will begin by analyzing data obtained from the PheNode, a solar powered, cloud connected, plant phenotyping and atmospheric data collection system.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
+      "title": "Wireless Sensor",
+      "content": "These battery-operated, solar-powered sensors placed in representative areas in the field remotely collect data throughout the growing season.",
+      "icon": "ws_single.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+      "title": "Soil Probe",
+      "content": "Soil probes are connected to the wireless sensors for soil measurements such as soil temperature and humidity.",
+      "icon": "Soil-Probe.svg"
     }
   ]
 }

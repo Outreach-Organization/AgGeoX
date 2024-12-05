@@ -39,8 +39,9 @@ export const MinTitle = styled("h6")`
   line-height: 1rem;
   padding: 0.5rem 0;
   text-transform: uppercase;
-  color: #000;
+  color: #e0e0e0;
   font-family: "Motiva Sans Light", sans-serif;
+  font-weight: bold;
 `;
 
 export const MinPara = styled("p")`

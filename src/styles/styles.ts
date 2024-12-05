@@ -27,7 +27,10 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+       background: radial-gradient(circle, #043e83, #0F172A
+);
+
+
         overflow-x: hidden;
     }
 
@@ -58,7 +61,10 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        background: linear-gradient(to right, #c7d2fe, #38bdf8, #c7d2fe); /* Gradient as the text color */
+    -webkit-background-clip: text; /* Ensures the gradient is applied to the text */
+    background-clip: text; /* Fallback for other browsers */
+    color: transparent; /* Makes the gradient visible */
         font-size: 56px;
         line-height: 1.18;
 
@@ -72,7 +78,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: rgb(148 163 184);
         font-size: 21px;        
         line-height: 1.41;
     }
