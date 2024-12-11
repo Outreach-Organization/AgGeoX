@@ -27,7 +27,16 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button
+                  name="submit"
+                  onClick={() =>
+                    window.open(
+                      "https://aggeox-docs.org",
+                      "_blank",
+                      "noopener noreferrer"
+                    )
+                  }
+                >
                   {t(button)}
                 </Button>
               )}
