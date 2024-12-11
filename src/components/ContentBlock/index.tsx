@@ -2,6 +2,11 @@ import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 
+import Lottie from "lottie-react";
+
+import Robot from "../../common/animations/lottie.json";
+import Sphere from "../../common/animations/cool_sphere.json";
+
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -43,7 +48,23 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={12} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            {icon === "three.svg" ? (
+              <Lottie
+                animationData={Robot}
+                loop
+                autoplay
+                style={{ width: "100%", height: "100%" }}
+              />
+            ) : icon === "two.svg" ? (
+              <Lottie
+                animationData={Sphere}
+                loop
+                autoplay
+                style={{ width: "100%", height: "100%" }}
+              />
+            ) : (
+              <SvgIcon src={icon} width="100%" height="100%" />
+            )}
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -60,7 +81,20 @@ const ContentBlock = ({
                         },
                         id: number
                       ) => {
-                        return (
+                        return item.title === "Learn more" ? (
+                          <Button
+                            key={id}
+                            color={item.color}
+                            onClick={() =>
+                              window.open(
+                                "https://www.danforthcenter.org/our-work/education-outreach/authentic-research-experiences-and-cures/",
+                                "_blank"
+                              )
+                            }
+                          >
+                            {t(item.title)}
+                          </Button>
+                        ) : (
                           <Button
                             key={id}
                             color={item.color}
