@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Row } from "antd";
 
 export const FooterSection = styled("footer")`
   background: rgb(241, 242, 243);
@@ -166,4 +167,23 @@ export const LanguageSwitchContainer = styled("div")`
   display: flex;
   justify-content: space-between;
   width: 85px;
+`;
+
+export const FooterBottomRow = styled(Row)`
+  border-top: 1px solid #000; /* Adds black top border */
+  padding-top: 10px; /* Adds spacing above the text */
+  margin-top: 20px; /* Separates the row from the rest of the content */
+  justify-content: center; /* Center-aligns the row content */
+`;
+
+export const FooterBottomText = styled.p`
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;

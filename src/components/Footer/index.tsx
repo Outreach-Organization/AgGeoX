@@ -13,6 +13,8 @@ import {
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
+  FooterBottomRow,
+  FooterBottomText, // Add this styled component
 } from "./styles";
 
 const Footer = ({ t }: { t: TFunction }) => {
@@ -63,6 +65,12 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LanguageSwitchContainer>
             </Col>
           </Row>
+          {/* Add a bottom row for the responsive footer text */}
+          <FooterBottomRow justify="start">
+            <FooterBottomText>
+              © 2024 Shakoor Lab. All rights reserved.
+            </FooterBottomText>
+          </FooterBottomRow>
         </Container>
       </FooterSection>
     </>
