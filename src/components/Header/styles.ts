@@ -41,7 +41,15 @@ export const Burger = styled("div")`
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: #38bdf8; /* Default fill color */
+    transition: fill 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+  }
+
+  &:hover svg,
+  &:active svg,
+  &:focus svg {
+    fill: #fff; /* Change fill color to white on hover */
   }
 `;
 
@@ -54,7 +62,9 @@ export const NotHidden = styled("div")`
 export const Menu = styled("h5")`
   font-size: 1.5rem;
   font-weight: 600;
-  text-align: center;
+  text-align: start;
+  color: #fff;
+  font-family: "Motiva Sans Light";
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
@@ -71,11 +81,18 @@ export const CustomNavLinkSmall = styled(NavLink)`
 
 export const Label = styled("span")`
   font-weight: 500;
-  color: #404041;
+  color: #38bdf8;
+  cursor: pointer;
   text-align: right;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+  }
 `;
 
 export const Outline = styled(MenuOutlined)`
