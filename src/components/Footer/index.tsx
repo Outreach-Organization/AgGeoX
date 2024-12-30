@@ -29,7 +29,10 @@ const Footer = ({ t }: { t: TFunction }) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Address")}</Language>
-              <Para>Donald Danforth Plant Science Center</Para>
+              <Para>
+                Donald Danforth Plant{" "}
+                <span className="science-center">Science Center</span>
+              </Para>
               <Para>975 N Warson Rd</Para>
               <Para>Olivette, MO, 63132</Para>
             </Col>
@@ -68,7 +71,15 @@ const Footer = ({ t }: { t: TFunction }) => {
           {/* Add a bottom row for the responsive footer text */}
           <FooterBottomRow justify="start">
             <FooterBottomText>
-              © 2024 Shakoor Lab. All rights reserved.
+              © 2024{" "}
+              <a
+                href="https://shakoorlab.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shakoor Lab
+              </a>
+              . All rights reserved.
             </FooterBottomText>
           </FooterBottomRow>
         </Container>
