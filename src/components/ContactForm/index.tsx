@@ -18,6 +18,20 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     return <Span>{ErrorMessage}</Span>;
   };
 
+  const handleEmailClick = () => {
+    const { name, message } = values;
+    const subject = `Contact from ${name || "Your Name"} about AgGeox Program`;
+    const body = `${message || "Your message here."}\n\nBest regards,\n${
+      name || "Your Name"
+    }`;
+    const mailtoLink = `mailto:shakoorlab.danforth@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+  };
+
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
@@ -39,16 +53,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 />
                 <ValidationType type="name" />
               </Col>
-              <Col span={24}>
-                <Input
-                  type="text"
-                  name="email"
-                  placeholder="Your Email"
-                  value={values.email || ""}
-                  onChange={handleChange}
-                />
-                <ValidationType type="email" />
-              </Col>
+
               <Col span={24}>
                 <TextArea
                   placeholder="Your Message"
@@ -59,7 +64,9 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <ValidationType type="message" />
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Submit")}</Button>
+                <Button name="submit" onClick={handleEmailClick}>
+                  {t("Contact")}
+                </Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>
