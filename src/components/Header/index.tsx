@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
@@ -18,6 +18,7 @@ import {
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const toggleButton = () => {
     setVisibility(!visible);
@@ -31,18 +32,26 @@ const Header = ({ t }: { t: TFunction }) => {
       });
       setVisibility(false);
     };
+
+    //use effect for switching between logo.svg and logo_no_text.svg
+    useEffect(() => {
+      const handleResize = () => setIsSmallScreen(window.innerWidth <= 1059);
+      handleResize(); // Check on component mount
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+          <Span style={{ marginLeft: "0.5px" }}>{t("About")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mapping")}</Span>
+          <Span style={{ marginLeft: "3px" }}>{t("Mapping")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Challenge")}</Span>
+          <Span style={{ marginLeft: "3px" }}>{t("Challenge")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall style={{ width: "180px" }}>
+        <CustomNavLinkSmall style={{ width: "190px" }}>
           <Span>
             <a
               href="https://aggeox-docs.org"
@@ -63,7 +72,11 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="100%" height="64px" />
+            <SvgIcon
+              src={isSmallScreen ? "logo_no_text.svg" : "logo.svg"}
+              width="100%"
+              height="64px"
+            />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
@@ -72,7 +85,14 @@ const Header = ({ t }: { t: TFunction }) => {
             <Outline />
           </Burger>
         </Row>
-        <Drawer closable={false} open={visible} onClose={toggleButton}>
+        <Drawer
+          closable={false}
+          open={visible}
+          onClose={toggleButton}
+          drawerStyle={{
+            background: "radial-gradient(circle, #043e83, #0F172A)", // Gradient background for menu
+          }}
+        >
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label onClick={toggleButton}>
               <Col span={12}>
