@@ -49,10 +49,12 @@ export const Styles = createGlobalStyle`
         padding: 1rem 1.25rem;
 
         :focus-within {
-            background: none;
+            background: #fff;
             box-shadow: #2e186a 0px 0px 0px 1px;
         }
     }
+
+    
 
     h1,
     h2,
