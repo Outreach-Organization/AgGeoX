@@ -45,9 +45,25 @@ export const LogoContainer = styled("div")`
 `;
 
 export const Para = styled("div")`
-  color: #18216d;
-  font-size: 14px;
-  width: 70%;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 0.625rem;
+  transition: all 0.3s ease-in-out;
+  max-width: max-content;
+
+  .science-center {
+    white-space: nowrap; /* Prevent wrapping by default */
+  }
+  @media (max-width: 1000px) {
+    .science-center {
+      display: block; /* Forces "Science Center" to move to the next line */
+    }
+  }
 `;
 
 export const Large = styled(Link)`
