@@ -71,7 +71,11 @@ const Header = ({ t }: { t: TFunction }) => {
     <HeaderSection>
       <Container>
         <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
+          <LogoContainer
+            style={{ width: isSmallScreen ? "100px" : "auto" }}
+            to="/"
+            aria-label="homepage"
+          >
             <SvgIcon
               src={isSmallScreen ? "logo_no_text.svg" : "logo.svg"}
               width="100%"
