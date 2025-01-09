@@ -1,4 +1,4 @@
 {
   "title": "Map, Predict, and Optimize",
-  "text": "Students will then use ArcGIS (a blah blah blah program) to create dynamic heatmaps, integrate data from PheNodes, and develop models that answer critical agricultural questions."
+  "text": "Students will set up their data analysis environment, create heatmaps using QGIS and Python, and visualize sorghum field trial data, all while developing predictive models for traits like yield, protein content, and chlorophyll fluorescence. They will also install and use TensorBoard to track preprocessing steps, hyperparameter tuning, and feature importance throughout the modeling process."
 }
