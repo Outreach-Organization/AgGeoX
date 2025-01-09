@@ -71,7 +71,7 @@ const Footer = ({ t }: { t: TFunction }) => {
           {/* Add a bottom row for the responsive footer text */}
           <FooterBottomRow justify="start">
             <FooterBottomText>
-              © 2024{" "}
+              © 2025{" "}
               <a
                 href="https://shakoorlab.com"
                 target="_blank"
