@@ -34,7 +34,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                 <span className="science-center">Science Center</span>
               </Para>
               <Para>975 N Warson Rd</Para>
-              <Para>Olivette, MO, 63132</Para>
+              <Para>Creve Couer, MO, 63132</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
