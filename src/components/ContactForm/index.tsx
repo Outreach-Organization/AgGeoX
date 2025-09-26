@@ -24,9 +24,11 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     const body = `${message || "Your message here."}\n\nBest regards,\n${
       name || "Your Name"
     }`;
-    const mailtoLink = `mailto:shakoorlab.danforth@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+    const mailtoLink =
+      `mailto:are@danforthcenter.org` +
+      `?cc=${encodeURIComponent("shakoorlab.danforth@gmail.com")}` +
+      `&subject=${encodeURIComponent(subject)}` +
+      `&body=${encodeURIComponent(body)}`;
 
     // Open the mailto link
     window.location.href = mailtoLink;

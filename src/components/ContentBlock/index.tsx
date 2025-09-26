@@ -87,7 +87,7 @@ const ContentBlock = ({
                             color={item.color}
                             onClick={() =>
                               window.open(
-                                "https://www.danforthcenter.org/our-work/education-outreach/authentic-research-experiences-and-cures/",
+                                "https://www.danforthcenter.org/our-work/education-outreach/k-12-programs/",
                                 "_blank"
                               )
                             }
