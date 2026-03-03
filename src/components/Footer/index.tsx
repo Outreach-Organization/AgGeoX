@@ -15,6 +15,9 @@ import {
   LanguageSwitchContainer,
   FooterBottomRow,
   FooterBottomText, // Add this styled component
+  SponsorContainer,
+  SponsorText,
+  SponsorLogo,
 } from "./styles";
 
 const Footer = ({ t }: { t: TFunction }) => {
@@ -34,7 +37,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                 <span className="science-center">Science Center</span>
               </Para>
               <Para>975 N Warson Rd</Para>
-              <Para>Creve Couer, MO, 63132</Para>
+              <Para>Saint Louis, MO, 63132</Para>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Company")}</Title>
@@ -68,10 +71,20 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LanguageSwitchContainer>
             </Col>
           </Row>
-          {/* Add a bottom row for the responsive footer text */}
-          <FooterBottomRow justify="start">
+          {/* Sponsor acknowledgement and responsive logo */}
+          <SponsorContainer>
+            <SponsorText>A big thank you to our sponsor:</SponsorText>
+            <SponsorLogo
+              src="/img/Boeing_full_logo.webp"
+              alt="Boeing logo"
+              loading="lazy"
+            />
+          </SponsorContainer>
+
+          {/* Copyright moved below sponsor */}
+          <FooterBottomRow justify="center">
             <FooterBottomText>
-              © 2025{" "}
+              © 2026{" "}
               <a
                 href="https://shakoorlab.com"
                 target="_blank"

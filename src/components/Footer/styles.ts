@@ -203,3 +203,45 @@ export const FooterBottomText = styled.p`
     font-size: 12px;
   }
 `;
+
+export const SponsorContainer = styled("div")`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding-bottom: 10px;
+`;
+
+export const SponsorText = styled("p")`
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 8px 0;
+  text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+`;
+
+export const SponsorLogo = styled("img")`
+  max-width: 260px;
+  width: 35%;
+  height: auto;
+  object-fit: contain;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 220px;
+    width: 45%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 160px;
+    width: 55%;
+  }
+
+  @media only screen and (max-width: 414px) {
+    max-width: 130px;
+    width: 70%;
+  }
+`;
